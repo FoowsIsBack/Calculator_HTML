@@ -7,5 +7,5 @@ function clear_number(){
 }
 
 function calculate(){
-    display.value = eval(display.value) || "Imissyouuu :(";
+    display.value = eval(display.value) || "Syntax Error :(";
 }
