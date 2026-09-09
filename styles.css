@@ -1,35 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(91, 190, 229);
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
-    padding-top: 150px;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 50px 15px;
+    margin: 0;
 }
-
 
 .container{
     background-color: white;
     width: 500px;
-    height: 560px;
+    max-width: 100%;
+    min-height: 560px;
+    height: auto;
     border: 2px solid black;
     border-radius: 5px;
-    padding-left: 30px;
+    padding: 20px 30px 30px;
     box-shadow: 10px 10px 40px;
-    padding-top: 20px;
 }
 
 h1{
     text-align: center;
+    margin: 0 0 20px;
 }
 
 input{
-    width: 450px;
+    width: 100%;
+    max-width: 100%;
     border: 1px solid black;
     padding: 10px;
-    font-size: larger;
-    color: black;
     font-size: 30px;
+    color: black;
     border-radius: 5px;
+    outline: none;
 }
 
 .numbers{
@@ -42,7 +51,9 @@ button{
     cursor: pointer;
     border-radius: 5px;
     background-color: rgba(128, 128, 128, 0.526);
-    width: 110px;
+    width: calc(25% - 6px);
+    min-height: 60px;
+    border: 1px solid black;
 }
 
 button:hover{
@@ -58,7 +69,7 @@ button[onclick="calculate('=')"]{
     background-color: rgb(40, 176, 40);
 }
 
-@media(max-width: 768px){
+@media (max-width: 768px){
 
     body{
         padding: 40px 15px;
@@ -77,6 +88,7 @@ button[onclick="calculate('=')"]{
         font-size: 26px;
         min-height: 58px;
     }
+
 }
 
 @media(max-width: 480px){
@@ -112,6 +124,7 @@ button[onclick="calculate('=')"]{
         min-height: 55px;
         padding: 8px;
     }
+
 }
 
 @media(max-width: 360px){
