@@ -54,6 +54,93 @@ button[onclick="clear_number('')"]{
 }
 
 button[onclick="calculate('=')"]{
-    width: 230px;
+    width: calc(75% - 6px);
     background-color: rgb(40, 176, 40);
+}
+
+@media(max-width: 768px){
+
+    body{
+        padding: 40px 15px;
+    }
+
+    .container{
+        width: 450px;
+        padding: 20px;
+    }
+
+    input{
+        font-size: 26px;
+    }
+
+    button{
+        font-size: 26px;
+        min-height: 58px;
+    }
+}
+
+@media(max-width: 480px){
+
+    body{
+        padding: 20px 10px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 400px;
+        min-height: auto;
+        padding: 18px 15px 25px;
+    }
+
+    h1{
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    input{
+        width: 100%;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .numbers{
+        padding-top: 20px;
+    }
+
+    button{
+        font-size: 24px;
+        min-height: 55px;
+        padding: 8px;
+    }
+}
+
+@media(max-width: 360px){
+
+    body{
+        padding: 10px 6px;
+    }
+
+    .container{
+        padding: 15px 10px 20px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+
+    input{
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    button{
+        font-size: 20px;
+        min-height: 50px;
+        padding: 6px;
+    }
+
+    .numbers{
+        padding-top: 15px;
+    }
+
 }
